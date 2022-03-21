@@ -17,13 +17,13 @@
     </form>
     <?php
     function urutan($nama) {
-        $temp = 0;
+        $nm = 0;
         for($i = 0; $i < count($nama); $i++) {
             for($j = $i + 1; $j < count($nama); $j++) {
                 if($nama[$i] > $nama[$j]) {
-                $temp = $nama[$i];
+                $nm = $nama[$i];
                 $nama[$i] = $nama[$j];
-                $nama[$j] = $temp;
+                $nama[$j] = $nm;
                 }
             }
         }
